@@ -22,9 +22,9 @@ jobs:
     container:
       image: crystallang/crystal:0.35.0
     steps:
-    - uses: actions/checkout@v1
-    - name: Crystal Ameba Linter
-      id: crystal-ameba
-      uses: crystal-ameba/github-action@v0.2.5
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - name: Crystal Ameba Linter
+        id: crystal-ameba
+        uses: crystal-ameba/github-action@v0.2.5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
